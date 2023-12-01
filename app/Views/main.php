@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pemrograman Web</title> 
+
+    <link rel="stylesheet" href="<?= base_url(); ?>assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- JUDUL -->
+        <center>
+            <h1 class="red"><span id="element"></span></h1>
+            <h2>Negative</h2>
+        </center>
+        <hr />
+
+        <!-- THUMBNAIL -->
+        <img src="<?= base_url(); ?>assets/images/62779644_605.jpg" alt="Kebakaran Hutan" />
+
+        <!-- KONTEN -->
+        <p>
+            Kebakaran hutan telah menjadi salah satu masalah lingkungan terbesar di
+            seluruh dunia, menimbulkan ancaman serius terhadap ekosistem,
+            keanekaragaman hayati, dan keseimbangan iklim global. Artikel ini akan
+            mengulas dampak kebakaran hutan, penyebabnya, serta upaya-upaya yang
+            dapat diambil untuk mengatasi krisis ini.
+        </p>
+        <p class="subjudul"><b>1. Dampak Kebakaran Hutan:</b></p>
+
+        <ul>
+            <li>
+                <b>Hilangnya Keanekaragaman Hayati:</b> Kebakaran merusak habitat
+                alami, mengancam berbagai spesies tanaman dan hewan yang bergantung
+                pada ekosistem hutan.
+            </li>
+            <li>
+                <b>Emisi Gas Rumah Kaca: </b> Proses pembakaran menghasilkan emisi gas
+                rumah kaca, seperti karbon dioksida dan metana, yang berkontribusi
+                pada perubahan iklim global.
+            </li>
+        </ul>
+
+        <p class="subjudul"><b>2. Penyebab Kebakaran Hutan:</b></p>
+        <ul>
+            <li>
+                <b>Pembukaan Lahan:</b> Praktik pembukaan lahan untuk perkebunan,
+                pertanian, dan perladangan dapat meningkatkan risiko kebakaran.
+            </li>
+            <li>
+                <b>Perubahan Iklim:</b> Peningkatan suhu dan perubahan pola hujan,
+                yang terkait dengan perubahan iklim, dapat menciptakan kondisi yang
+                lebih kering dan rentan terhadap kebakaran.
+            </li>
+        </ul>
+
+        <p class="subjudul"><b>3. Upaya Pengendalian dan Pencegahan:</b></p>
+        <ul>
+            <li>
+                <b>Penegakan Hukum:</b> Meningkatkan penegakan hukum terhadap
+                pembukaan lahan ilegal dan pembakaran hutan, serta memberlakukan
+                sanksi yang lebih berat bagi pelaku kebakaran hutan.
+            </li>
+            <li>
+                <b>Pengelolaan Hutan yang Berkelanjutan:</b> Memperkuat praktik
+                pengelolaan hutan yang berkelanjutan untuk mencegah deforestasi dan
+                merestorasi ekosistem yang terpengaruh.
+            </li>
+        </ul>
+        <br>
+        <h3 class="kesimpulan">Kesimpulan:</h3>
+        <p>
+            Krisis kebakaran hutan bukan hanya masalah lokal, tetapi juga merupakan
+            tantangan global yang memerlukan tanggapan serius. Hanya dengan
+            kerjasama internasional dan langkah-langkah konkret, kita dapat
+            melindungi hutan dan mencegah dampak yang merugikan bagi bumi kita.
+            Keberlanjutan dan kelestarian lingkungan adalah tanggung jawab bersama
+            kita untuk menjaga kehidupan di planet ini.
+        </p>
+
+        <center>
+            <h2 class="subsubjudul">Media</h2>
+            <!-- VIDEO -->
+            <video height="400" controls>
+                <source src="<?= base_url(); ?>assets/vidio/1ec1898a31d33e94a91fdbd4477b04cb.mp4" type="video/mp4">
+            </video>
+            <br>
+
+            <!-- AUDIO -->
+            <h2 class="subsubjudul">Audio</h2>
+            <audio controls>
+                <source src="<?= base_url(); ?>assets/audio/y2mate.com - Efek Suara  Kayu Terbakar Shorts_480p.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <br><br>
+
+            <!-- YOUTUBE -->
+            <h2 class="subsubjudul">Youtube Vidio</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TNEPhyo9Mxw?si=R1OoHtOGcYT410IB"
+                title="Kebakaran Hutan" allowfullscreen></iframe>
+
+            <!-- WORKMAP -->
+            <h2 class="subsubjudul">Workmap</h2>
+            <img src="<?= base_url(); ?>assets/images/turkey-fire_169.jpeg" alt="Workplace" usemap="#workmap" width="400" height="379">
+        </center>
+
+
+        <map name="workmap">
+            <area shape="circle" coords="35,44,300,350" alt="DAMKAR"
+                href="https://id.wikipedia.org/wiki/Pemadam_kebakaran">
+        </map>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Kebakaran Hutan'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+
+</html>

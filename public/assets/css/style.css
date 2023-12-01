@@ -1,0 +1,53 @@
+* {
+    font-family: monospace;
+    background-color: rgba(255, 228, 225, 0.356);
+        }
+.red {
+    color: red;
+}
+
+h2 {
+    color: blue;
+}
+
+.container {
+    background-color:mistyrose;
+    max-width: 730px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+.subjudul{
+    font-size: 15px;
+}
+
+.kesimpulan {
+    font-size: 20px;
+}
+
+.subsubjudul {
+    color: white;
+    background-color: black; 
+    padding-bottom: 0.5rem;  
+}
+
+.subsubjudul:hover {
+    color:blanchedalmond;
+}
+
+.subsubjudul::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid blanchedalmond;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.subsubjudul:hover::after {
+    transform: scaleX(0.2);
+}
